@@ -1,0 +1,11 @@
+sudo: false
+
+language: python
+
+script:
+#    - export API_KEY=$API_KEY
+    - python example.py
+
+after_success:
+  - coveralls
+
